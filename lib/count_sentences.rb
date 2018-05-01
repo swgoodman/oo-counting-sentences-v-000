@@ -16,7 +16,8 @@ class String
 
   def count_sentences
     if self.split.count > 0
-      self.split.count
+      what = self.split.count
+      binding.pry
     else
       0
     end
