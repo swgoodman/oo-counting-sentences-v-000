@@ -16,8 +16,7 @@ class String
 
   def count_sentences
     if self.split.count > 0
-      what = self.split.count
-      binding.pry
+      string.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
     else
       0
     end
